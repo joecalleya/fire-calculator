@@ -30,7 +30,7 @@ body {
 h1 {
     font-size: 100%;
     width: $display-width;
-    margin: 2px;
+    margin: 5px;
     padding: 2px;
 }
 
@@ -50,7 +50,7 @@ section.screen {
 
     #screen__display {
         width: $display-width;
-        height: 200px;
+        height: 220px;
         background-color: $orange;
         color: white;
         text-align: center;
@@ -88,7 +88,7 @@ form {
         padding: 2%;
         color: black;
         background-color: rgb(255,255,255,0.0);
-        height: 60px;
+        height: 50px;
 
         &:hover{
 
@@ -115,7 +115,7 @@ form {
         }
         button {
             width: 150px;
-            height: 60px;
+            height: 50px;
             background-color: rgb(255,255,255,0.0);
             border: none;
             text-align: center;

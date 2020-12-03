@@ -22,7 +22,7 @@ body {
 h1 {
   font-size: 100%;
   width: 330px;
-  margin: 2px;
+  margin: 5px;
   padding: 2px;
 }
 
@@ -41,7 +41,7 @@ section.screen .screen__explaination {
 }
 section.screen #screen__display {
   width: 330px;
-  height: 200px;
+  height: 220px;
   background-color: #f1682c;
   color: white;
   text-align: center;
@@ -75,7 +75,7 @@ input {
   padding: 2%;
   color: black;
   background-color: rgba(255, 255, 255, 0);
-  height: 60px;
+  height: 50px;
 }
 input:hover {
   opacity: 0.6;
@@ -99,7 +99,7 @@ input:focus {
 }
 .form__buttons button {
   width: 150px;
-  height: 60px;
+  height: 50px;
   background-color: rgba(255, 255, 255, 0);
   border: none;
   text-align: center;
