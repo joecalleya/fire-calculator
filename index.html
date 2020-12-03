@@ -6,28 +6,36 @@
     <title>🔥 Calculator</title>
     <link rel="stylesheet" href="main.css" />
 </head>
-
 <body>
-    <h1>Financial Independence Retire Early: Calculator</h1>
-    <section class="screen">
-        <article class="screen__explaination">
-            <p>
-                One way of calculating how much money someone needs in retirement is by using the 30x or 4% rule.
-                this is your current spending multipled by 30. Meaning, you can withdraw this amount for 30 years.
-            </p>
+    <section class="calculator">
+        <h1>Financial Independence Retire Early: Calculator</h1>
+        <section class="screen">
             <div id="screen__display"></div>
-        </article>
-    </section>
-    <section class="form">
-        <form id='inputs' action="input">
-            <input type="number" id="savings" placeholder="Current Savings" required>
-            <input type="number" id="interestRate" placeholder="Interest Rate in %" required>
-            <input type="number" id="salary" placeholder="Annual Salary" required>
-            <input type="number" id="expenses" placeholder="Annual Expenses" required>
-            <button type="button" onclick="calc()">Calculate</button>
-        </form>
-    </section>
-    <script src="main.js"></script>
-</body>
+
+            <article class="screen__explaination">
+                <p>
+                    One way of calculating how much money someone needs in retirement is by using the 30x or 4% rule.
+                    this is your current spending multiplied by 30. Meaning, you can withdraw this amount for 30 years.
+                </p>
+            </article>
+        </section>
+        <section class="form">
+            <form id='inputs' action="input">
+                <input type="number" pattern="[1-9]{*}" id="savings" placeholder="Current Savings" required>
+                <input type="number" id="interestRate" placeholder="Interest Rate in %" required>
+                <input type="number" id="salary" placeholder="Annual Salary" required>
+                <input type="number" id="expenses" placeholder="Annual Expenses" required>
+                <div class=form__buttons>
+                    <button type="button" onclick="calc()">Calculate</button>
+                    <button type="button" class="form__buttons__refresh">Refresh</button>
+                </div>
+            </form>
+        </section>
+        </section>
+
+        <script src="main.js"></script>
+
+    </body>
+
 
 </html>

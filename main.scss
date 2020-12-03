@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+$background-colour1: rgb(255,255,255);
+$background-colour2: rgb(249,245,243);
+$orange: rgb(241,104,44);
+$display-width: 330px;
+$blue: rgb(78,76,215);
+
+body {
+    background-color:rgb(240,229,223);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.calculator {
+    background-image: linear-gradient(-90deg, $background-colour1, $background-colour2);
+    font-family: 'Roboto', sans-serif;
+    width: 350px;
+    height: 700px;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+}
+h1 {
+    font-size: 100%;
+    width: $display-width;
+    margin: 2px;
+    padding: 2px;
+}
+
+section.screen {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: $display-width;
+    font-size: 100%;
+
+    .screen__explaination{
+        width: $display-width;
+        margin: 1px;
+        padding: 1px;
+    }
+
+    #screen__display {
+        width: $display-width;
+        height: 200px;
+        background-color: $orange;
+        color: white;
+        text-align: center;
+        text-justify: center;
+        border-radius: 3px;
+
+        p {
+            margin: 5px;
+        
+            span {
+                font-weight: bold;
+                font-size: 125%;
+                color: white;
+            }
+        }
+        }
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    width: $display-width;
+    }
+    
+    input {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        text-decoration: none;
+        font-size: 100%;
+        border: none;
+        margin: 2%;
+        padding: 2%;
+        color: black;
+        background-color: rgb(255,255,255,0.0);
+        height: 60px;
+
+        &:hover{
+
+            opacity: 0.6;
+            border: 1px grey solid;
+
+        }
+        &:focus{
+            background-color: rgb(255,255,255,0.0);
+            color: black;
+            border: none;
+        }
+    }
+
+    .form__buttons{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-evenly;
+        width: $display-width;
+
+        button {
+            width: 150px;
+            height: 60px;
+            background-color: rgb(255,255,255,0.0);
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            font-size: 100%;
+            font-family: 'Roboto', sans-serif;
+            border-radius: 3px;
+
+            &:hover{
+                background-color: $orange;
+                color: white;
+                border: none;
+    
+            }
+    }
+}
+
