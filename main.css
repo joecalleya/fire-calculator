@@ -94,6 +94,9 @@ input:focus {
   justify-content: space-evenly;
   width: 330px;
 }
+.form__buttons .form__buttons__refresh:hover {
+  background-color: #4e4cd7;
+}
 .form__buttons button {
   width: 150px;
   height: 60px;

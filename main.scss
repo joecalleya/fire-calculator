@@ -109,7 +109,10 @@ form {
         align-content: center;
         justify-content: space-evenly;
         width: $display-width;
+        .form__buttons__refresh:hover {
+            background-color: $blue;
 
+        }
         button {
             width: 150px;
             height: 60px;
@@ -127,6 +130,7 @@ form {
                 border: none;
     
             }
+
     }
 }
 
