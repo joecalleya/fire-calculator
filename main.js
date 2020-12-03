@@ -28,9 +28,9 @@ refreshButton.addEventListener('click', (event) => {
 
     //return to display
     display.innerHTML = ``;
-    display.innerHTML += `<p>30x expenses rule target savings:<br><span> £${targetSavings}</span></p>`;
-    display.innerHTML += `<p> starting with <br> <span> £${savings.value}</span></p>`;
-    display.innerHTML += `<p>by saving <br><span>£${yearlySaving}</span> per year <br> at a rate of <span>${interestRate.value} % </span></p>`;
-    display.innerHTML += `<p>you can Retire in approximately <br><span>${timeToSave}</span> years</p>`;
+    display.innerHTML += `<p>30x expenses rule target savings:<span> £${targetSavings}</span></p>`;
+    display.innerHTML += `<p>starting with  <span> £${savings.value}</span>`;
+    display.innerHTML += `<p>by saving <span>£${yearlySaving}</span>per year <br> at a rate of <span>${interestRate.value} % </span></p>`;
+    display.innerHTML += `<p> you can retire in approximately<br> <span>${timeToSave}</span> years</p>`;
 
 };

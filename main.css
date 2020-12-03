@@ -8,22 +8,29 @@ body {
 }
 
 .calculator {
-  background-image: linear-gradient(-90deg, white, #f9f5f3);
+  background-image: linear-gradient(-45deg, rgba(241, 245, 2, 0.1), rgba(241, 245, 2, 0.5));
   font-family: "Roboto", sans-serif;
   width: 350px;
   height: 700px;
-  padding: 5%;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
+  border-radius: 30px;
 }
 
 h1 {
-  font-size: 100%;
-  width: 330px;
+  font-size: 300%;
   margin: 5px;
   padding: 2px;
+  align-items: center;
+  color: #4e4cd7;
+  color: #f1682c;
+  text-align: center;
+  border-radius: 30px;
+  width: 325px;
+  opacity: 0.6;
 }
 
 section.screen {
@@ -31,22 +38,31 @@ section.screen {
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  width: 330px;
+  width: 325px;
   font-size: 100%;
 }
 section.screen .screen__explaination {
-  width: 330px;
-  margin: 1px;
-  padding: 1px;
+  font-size: 80%;
+  margin: 5px;
+  align-items: center;
+  color: #4e4cd7;
+  color: #f1682c;
+  text-align: center;
+  border-radius: 30px;
+  width: 325px;
+  opacity: 0.5;
 }
 section.screen #screen__display {
-  width: 330px;
-  height: 220px;
+  width: 325px;
+  height: 200px;
   background-color: #f1682c;
   color: white;
   text-align: center;
   text-justify: center;
-  border-radius: 3px;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 2px;
+  box-shadow: 3px 3px grey;
 }
 section.screen #screen__display p {
   margin: 5px;
@@ -62,7 +78,7 @@ form {
   flex-direction: column;
   align-content: center;
   justify-items: center;
-  width: 330px;
+  width: 325px;
 }
 
 input {
@@ -71,11 +87,13 @@ input {
   text-decoration: none;
   font-size: 100%;
   border: none;
-  margin: 2%;
-  padding: 2%;
-  color: black;
+  margin: 10px;
+  padding: 2px;
+  color: grey;
   background-color: rgba(255, 255, 255, 0);
   height: 50px;
+  border-radius: 10px;
+  box-shadow: 3px 3px grey;
 }
 input:hover {
   opacity: 0.6;
@@ -90,15 +108,29 @@ input:focus {
 .form__buttons {
   display: flex;
   flex-direction: row;
-  align-content: center;
-  justify-content: space-evenly;
-  width: 330px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 2px;
+}
+.form__buttons .form__buttons__refresh {
+  border-radius: 10px;
+  box-shadow: 3px 3px grey;
 }
 .form__buttons .form__buttons__refresh:hover {
   background-color: #4e4cd7;
 }
+.form__buttons .form__buttons__calc {
+  border-radius: 10px;
+  box-shadow: 3px 3px grey;
+}
+.form__buttons .form__buttons__calc:hover {
+  background-color: #f1682c;
+  color: white;
+  border: none;
+}
 .form__buttons button {
-  width: 150px;
+  width: 140px;
   height: 50px;
   background-color: rgba(255, 255, 255, 0);
   border: none;
@@ -106,10 +138,5 @@ input:focus {
   text-decoration: none;
   font-size: 100%;
   font-family: "Roboto", sans-serif;
-  border-radius: 3px;
-}
-.form__buttons button:hover {
-  background-color: #f1682c;
-  color: white;
-  border: none;
+  color: grey;
 }

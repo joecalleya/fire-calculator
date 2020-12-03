@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
-$background-colour1: rgb(255,255,255);
+$background-colour1: rgb(2,255,255);
 $background-colour2: rgb(249,245,243);
+$yellow1: rgba(241,245,2,0.1);
+$yellow2: rgba(241,245,2,0.5);
 $orange: rgb(241,104,44);
-$display-width: 330px;
+$display-width: 325px;
 $blue: rgb(78,76,215);
 
 body {
@@ -16,22 +18,31 @@ body {
 }
 
 .calculator {
-    background-image: linear-gradient(-90deg, $background-colour1, $background-colour2);
+    background-image: linear-gradient(-45deg, $yellow1, $yellow2);
     font-family: 'Roboto', sans-serif;
     width: 350px;
     height: 700px;
-    padding: 5%;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    border-radius: 30px;
 
 }
 h1 {
-    font-size: 100%;
-    width: $display-width;
+    font-size: 300%;
     margin: 5px;
     padding: 2px;
+    align-items: center;
+    color: $blue;
+    color:$orange;
+    text-align: center;
+    border-radius: 30px;
+    width: $display-width;
+    opacity: 0.6;
+
+
 }
 
 section.screen {
@@ -42,20 +53,31 @@ section.screen {
     width: $display-width;
     font-size: 100%;
 
+
     .screen__explaination{
+        font-size: 80%;
+        margin: 5px;
+        align-items: center;
+        color: $blue;
+        color:$orange;
+        text-align: center;
+        border-radius: 30px;
         width: $display-width;
-        margin: 1px;
-        padding: 1px;
+        opacity: 0.5;
+
     }
 
     #screen__display {
         width: $display-width;
-        height: 220px;
+        height: 200px;
         background-color: $orange;
         color: white;
         text-align: center;
         text-justify: center;
-        border-radius: 3px;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 2px;
+        box-shadow: 3px 3px grey;
 
         p {
             margin: 5px;
@@ -76,6 +98,7 @@ form {
     align-content: center;
     justify-items: center;
     width: $display-width;
+
     }
     
     input {
@@ -84,11 +107,13 @@ form {
         text-decoration: none;
         font-size: 100%;
         border: none;
-        margin: 2%;
-        padding: 2%;
-        color: black;
+        margin: 10px;
+        padding: 2px;
+        color: grey;
         background-color: rgb(255,255,255,0.0);
         height: 50px;
+        border-radius: 10px;
+        box-shadow: 3px 3px grey;
 
         &:hover{
 
@@ -106,15 +131,32 @@ form {
     .form__buttons{
         display: flex;
         flex-direction: row;
-        align-content: center;
-        justify-content: space-evenly;
-        width: $display-width;
-        .form__buttons__refresh:hover {
-            background-color: $blue;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px;
+        padding: 2px;
 
+        .form__buttons__refresh {
+            border-radius: 10px;
+            box-shadow: 3px 3px grey;
+        
+            &:hover {
+                background-color: $blue;
+        }
+        }
+        .form__buttons__calc {
+            border-radius: 10px;
+            box-shadow: 3px 3px grey;
+        
+            &:hover{
+                background-color: $orange;
+                color: white;
+                border: none;
+    
+            }
         }
         button {
-            width: 150px;
+            width: 140px;
             height: 50px;
             background-color: rgb(255,255,255,0.0);
             border: none;
@@ -122,14 +164,8 @@ form {
             text-decoration: none;
             font-size: 100%;
             font-family: 'Roboto', sans-serif;
-            border-radius: 3px;
+            color: grey;
 
-            &:hover{
-                background-color: $orange;
-                color: white;
-                border: none;
-    
-            }
 
     }
 }
